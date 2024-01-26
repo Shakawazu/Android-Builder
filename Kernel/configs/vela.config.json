@@ -22,7 +22,7 @@
         "binaryEnv": [
           "bin"
         ]
-      },
+      }
     ],
     "enableCcache": true,
     "params": {
