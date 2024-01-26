@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Mi8SE",
-      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm710",
-      "branch": "lineage-20",
+      "repo": "https://github.com/Lyxot/sirius_Kernel",
+      "branch": "sirius-q-oss",
       "device": "sirius",
-      "defconfig": "defconfig"
+      "defconfig": "sirius_user_defconfig"
     },
     "toolchains": [
       {
