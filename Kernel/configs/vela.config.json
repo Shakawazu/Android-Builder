@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "MiCC9MeituEdition",
-      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm710",
-      "branch": "lineage-20",
+      "repo": "https://github.com/Lyxot/sirius_Kernel",
+      "branch": "sirius-q-oss",
       "device": "vela",
-      "defconfig": "sdm670-perf_defconfig"
+      "defconfig": "vela_user_defconfig"
     },
     "toolchains": [
       {
