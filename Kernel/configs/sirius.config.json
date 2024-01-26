@@ -2,37 +2,24 @@
   {
     "kernelSource": {
       "name": "Mi8SE",
-      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm710",
-      "branch": "lineage-20",
+      "repo": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource",
+      "branch": "sirius-q-oss",
       "device": "sirius",
-      "defconfig": "xiaomi/sirius.config"
+      "defconfig": "sirius_user_defconfig"
     },
     "toolchains": [
-      {
-        "repo": "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b",
-        "branch": "lineage-20.0",
-        "name": "clang",
-        "binaryEnv": [
-          "bin"
-        ]
-      },
-      {
-        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
-        "branch": "lineage-19.1",
-        "name": "aarch64",
-        "binaryEnv": [
-          "bin"
-        ]
-      },
-      {
-        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
-        "branch": "lineage-19.1",
-        "name": "arm",
-        "binaryEnv": [
-          "bin"
-        ]
-      }
-    ],
+  {
+    "name": "proton-clang",
+    "repo": "https://github.com/kdrag0n/proton-clang",
+    "branch": "master",
+    "binaryEnv": ["./bin"]
+  },
+  {
+    "name": "gcc"
+    "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/84fb09fafc92a3d9b4d160f049d46c3c784cc941.tar.gz"
+    "binaryEnv": ["bin"]
+  }
+],
     "enableCcache": true,
     "params": {
       "ARCH": "arm64",
