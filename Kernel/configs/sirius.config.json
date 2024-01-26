@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "Xiaomi8SE",
+      "name": "Mi8SE",
       "repo": "https://github.com/Shakawazu/android_kernel_xiaomi_sdm710",
       "branch": "10.0-caf",
       "device": "sirius",
@@ -9,14 +9,28 @@
     },
     "toolchains": [
       {
+        "repo": "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b",
+        "branch": "lineage-20.0",
         "name": "clang",
-    "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/android-11.0.0_r48.tar.gz",
-    "binaryEnv": ["./bin"]
+        "binaryEnv": [
+          "bin"
+        ]
       },
       {
-        "name": "gcc",
-    "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/android-11.0.0_r48.tar.gz",
-    "binaryEnv": ["./bin"]
+        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
+        "branch": "lineage-19.1",
+        "name": "aarch64",
+        "binaryEnv": [
+          "bin"
+        ]
+      },
+      {
+        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
+        "branch": "lineage-19.1",
+        "name": "arm",
+        "binaryEnv": [
+          "bin"
+        ]
       }
     ],
     "enableCcache": true,
@@ -27,6 +41,18 @@
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
         "CROSS_COMPILE": "aarch64-linux-android-",
         "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
+        "LD": "ld.lld",
+        "AR": "llvm-ar",
+        "NM": "llvm-nm",
+        "OBJCOPY": "llvm-objcopy",
+        "OBJDUMP": "llvm-objdump",
+        "READELF": "llvm-readelf",
+        "OBJSIZE": "llvm-size",
+        "STRIP": "llvm-strip",
+        "LDGOLD": "aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "llvm-ar",
+        "LLVM_DIS": "llvm-dis",
+        "CONFIG_THINLTO": ""
       }
     },
     "AnyKernel3": {
@@ -34,6 +60,6 @@
       "release": true
     },
     "enableKernelSU": true,
-    "enableLXC": false
+    "enableLXC": true
   }
 ]
