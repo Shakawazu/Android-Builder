@@ -17,12 +17,12 @@
         ]
       },
       {
-        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/84fb09fafc92a3d9b4d160f049d46c3c784cc941.tar.gz"
-        "name": "gcc"
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/84fb09fafc92a3d9b4d160f049d46c3c784cc941.tar.gz",
+        "name": "gcc",
         "binaryEnv": [
           "bin"
         ]
-      }
+      },
     ],
     "enableCcache": true,
     "params": {
