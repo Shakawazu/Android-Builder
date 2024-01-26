@@ -8,22 +8,22 @@
       "defconfig": "vela_user_defconfig"
     },
     "toolchains": [
-  {
-    "name": "proton-clang",
-    "repo": "https://github.com/kdrag0n/proton-clang",
-    "branch": "master",
-    "binaryEnv": [
-      "bin"
-    ]
-  },
-  {
-    "name": "gcc"
-    "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/84fb09fafc92a3d9b4d160f049d46c3c784cc941.tar.gz"
-    "binaryEnv": [
-      "bin"
-    ]
-  }
-],
+      {
+        "name": "clang",
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "binaryEnv": [
+          "bin"
+        ]
+      },
+      {
+        "name": "gcc"
+        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/84fb09fafc92a3d9b4d160f049d46c3c784cc941.tar.gz"
+        "binaryEnv": [
+          "bin"
+        ]
+      }
+    ],
     "enableCcache": true,
     "params": {
       "ARCH": "arm64",
