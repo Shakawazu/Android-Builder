@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "MiCC9MeituEdition",
-      "repo": "https://github.com/Shakawazu/android_kernel_xiaomi_sdm710",
-      "branch": "10.0-caf",
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm710",
+      "branch": "lineage-20",
       "device": "vela",
-      "defconfig": "vela_defconfig"
+      "defconfig": "sdm670-perf_defconfig"
     },
     "toolchains": [
       {
