@@ -12,12 +12,16 @@
     "name": "proton-clang",
     "repo": "https://github.com/kdrag0n/proton-clang",
     "branch": "master",
-    "binaryEnv": ["./bin"]
+    "binaryEnv": [
+      "bin"
+    ]
   },
   {
     "name": "gcc"
     "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/84fb09fafc92a3d9b4d160f049d46c3c784cc941.tar.gz"
-    "binaryEnv": ["bin"]
+    "binaryEnv": [
+      "bin"
+    ]
   }
 ],
     "enableCcache": true,
