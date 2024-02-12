@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "MiCC9MeituEdition",
-      "repo": "https://github.com/Lyxot/sirius_Kernel",
-      "branch": "sirius-q-oss",
+      "repo": "https://github.com/MemeGang-Development/kernel_xiaomi_sdm710",
+      "branch": "eleven",
       "device": "vela",
-      "defconfig": "vela_user_defconfig"
+      "defconfig": "vela_defconfig"
     },
     "toolchains": [
       {
